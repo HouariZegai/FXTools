@@ -1,0 +1,24 @@
+/* Start Model 1 */
+
+.container-box-m1 {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+    -fx-background-color: #FFF;
+    -fx-background-radius: 10
+}
+
+.container-box-m1:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 25, 0, 0, 0);
+    -fx-cursor: hand
+}
+
+.pane-box-m1 {
+    -fx-background-radius: 10
+}
+
+.title-box-m1 {
+    -fx-font-size: 22px;
+    -fx-text-fill: #FFF;
+    -fx-text-alignment: center
+}
+
+/* End Model 1 */
