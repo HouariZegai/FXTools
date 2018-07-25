@@ -1,0 +1,30 @@
+.list {
+    -fx-background-radius: 10;
+    -fx-border-width: 2px;
+    -fx-border-color: #CCC;
+    -fx-border-style: solid;
+    -fx-border-radius: 10;
+}
+
+.list .header-box {
+    -fx-background-radius: 8;
+    -fx-background-color: #EEE
+}
+
+.list > .box {
+    -fx-border-width: 2px 0 0 0;
+    -fx-border-color: #CCC;
+    -fx-border-style: solid;
+}
+
+.list .title {
+    -fx-font-size: 22px
+}
+
+.list .title2 {
+    -fx-font-size: 16px
+}
+
+.list JFXToggleButton:hover {
+    -fx-cursor: hand
+}
