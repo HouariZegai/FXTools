@@ -12,7 +12,7 @@ public class Launch extends Application {
     
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/lists/Lists.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/sliders/slideshow/SlideShow.fxml"));
         
         stage.setScene(new Scene(root));
         stage.setTitle("JavaFx Tools");
