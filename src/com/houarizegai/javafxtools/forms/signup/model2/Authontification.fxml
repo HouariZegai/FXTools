@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@authontification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane>
+         <children>
+            <ImageView fitHeight="255.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background.png" />
+               </image></ImageView>
+            <Pane styleClass="pane-color" />
+         </children>
+      </StackPane>
+      <VBox alignment="TOP_CENTER" prefWidth="400.0" spacing="70.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label styleClass="title" text="GAMES HUB" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-desc" text="This is description you can replace them by any description" textAlignment="CENTER" wrappingWidth="257.40576171875" />
+               </children>
+            </VBox>
+            <JFXTabPane tabMinWidth="169.0">
+               <tabs>
+                  <Tab styleClass="tab-title" text="Sign in">
+                    <VBox alignment="TOP_CENTER" fillWidth="false" spacing="40.0" styleClass="bottom-root">
+                       <children>
+                          <Label styleClass="footer-title" text="Login to your account">
+                             <VBox.margin>
+                                <Insets />
+                             </VBox.margin>
+                          </Label>
+                           <VBox spacing="20.0">
+                              <children>
+                                 <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                    <children>
+                                       <MaterialDesignIconView glyphName="GMAIL" size="25" styleClass="icon" />
+                                       <JFXTextField labelFloat="true" promptText="Username">
+                                          <styleClass>
+                                             <String fx:value="field-signin" />
+                                             <String fx:value="h-w-item" />
+                                          </styleClass>
+                                       </JFXTextField>
+                                    </children>
+                                 </HBox>
+                                 <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                    <children>
+                                       <Icons525View glyphName="LOCK" size="25" styleClass="icon" />
+                                       <JFXPasswordField labelFloat="true" promptText="Password">
+                                          <styleClass>
+                                             <String fx:value="field-signin" />
+                                             <String fx:value="h-w-item" />
+                                          </styleClass>
+                                       </JFXPasswordField>
+                                    </children>
+                                 </HBox>
+                              </children>
+                           </VBox>
+                          <JFXButton buttonType="RAISED" text="Sign in">
+                              <styleClass>
+                                 <String fx:value="btn" />
+                                 <String fx:value="btn-signin" />
+                                 <String fx:value="h-w-item" />
+                              </styleClass></JFXButton>
+                       </children>
+                       <padding>
+                          <Insets top="20.0" />
+                       </padding>
+                    </VBox>
+                  </Tab>
+                  <Tab styleClass="tab-title" text="Sign up">
+                    <VBox alignment="TOP_CENTER" fillWidth="false" spacing="15.0" styleClass="bottom-root">
+                       <children>
+                          <Label styleClass="footer-title" text="Create a new account">
+                             <VBox.margin>
+                                <Insets />
+                             </VBox.margin>
+                          </Label>
+                          <TextField promptText="Your Name">
+                              <styleClass>
+                                 <String fx:value="field-signup" />
+                                 <String fx:value="h-w-item" />
+                              </styleClass></TextField>
+                          <TextField promptText="Username">
+                              <styleClass>
+                                 <String fx:value="field-signup" />
+                                 <String fx:value="h-w-item" />
+                              </styleClass></TextField>
+                          <TextField promptText="Email">
+                              <styleClass>
+                                 <String fx:value="field-signup" />
+                                 <String fx:value="h-w-item" />
+                              </styleClass></TextField>
+                          <PasswordField promptText="Password">
+                              <styleClass>
+                                 <String fx:value="field-signup" />
+                                 <String fx:value="h-w-item" />
+                              </styleClass></PasswordField>
+                          <JFXButton buttonType="RAISED" text="Register">
+                              <styleClass>
+                                 <String fx:value="btn" />
+                                 <String fx:value="btn-signup" />
+                                 <String fx:value="h-w-item" />
+                              </styleClass></JFXButton>
+                       </children>
+                       <padding>
+                          <Insets top="20.0" bottom="20.0" />
+                       </padding>
+                    </VBox>
+                  </Tab>
+                </tabs>
+            </JFXTabPane>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" top="65.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
