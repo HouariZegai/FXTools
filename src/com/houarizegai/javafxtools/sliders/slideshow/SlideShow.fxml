@@ -17,7 +17,7 @@
             <VBox alignment="CENTER" spacing="5.0">
                <children>
                   <Label styleClass="title" text="Slide 3 title" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Looooooooooooooooooooooooooooooooooooooooooooooooooooooooong description" textAlignment="CENTER" wrappingWidth="231.759765625" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="You can replace this description by any other descrition, just replace it by any other things" textAlignment="CENTER" wrappingWidth="231.759765625" />
                </children>
             </VBox>
             <ImageView fitHeight="130.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
@@ -35,7 +35,7 @@
             <VBox alignment="CENTER" spacing="5.0">
                <children>
                   <Label styleClass="title" text="Slide 2 title" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Looooooooooooooooooooooooooooooooooooooooooooooooooooooooong description" textAlignment="CENTER" wrappingWidth="231.759765625" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="You can replace this description by any other descrition, just replace it by any other things" textAlignment="CENTER" wrappingWidth="231.759765625" />
                </children>
             </VBox>
             <ImageView fitHeight="130.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
@@ -53,7 +53,7 @@
             <VBox alignment="CENTER" spacing="5.0">
                <children>
                   <Label styleClass="title" text="Slide 1 title" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Looooooooooooooooooooooooooooooooooooooooooooooooooooooooong description" textAlignment="CENTER" wrappingWidth="231.759765625" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="You can replace this description by any other descrition, just replace it by any other things" textAlignment="CENTER" wrappingWidth="231.759765625" />
                </children>
             </VBox>
             <ImageView fitHeight="130.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
