@@ -13,6 +13,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.function.Predicate;
+import javafx.animation.FadeTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -20,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
+import javafx.util.Duration;
 
 public class ManagementController implements Initializable {
 
@@ -55,7 +57,7 @@ public class ManagementController implements Initializable {
         loadTable(); // Load data to table from database
         
     }
-
+    
     private void initTable() {
         colName = new JFXTreeTableColumn<>("NAME");
         colName.setPrefWidth(200);
