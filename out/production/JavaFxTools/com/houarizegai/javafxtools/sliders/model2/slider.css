@@ -1,0 +1,4 @@
+.box:hover {
+    -fx-cursor: hand;
+    -fx-background-color: rgba(22, 22, 22, 0.1);
+}

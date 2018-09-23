@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<ScrollPane prefWidth="1305.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <FlowPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="778.0" prefWidth="1250.0" vgap="10.0">
+         <padding>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <VBox maxHeight="-Infinity" prefWidth="406.0" styleClass="list" stylesheets="@css/list1.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="402.0" styleClass="header-box">
+                     <children>
+                        <Label styleClass="title" text="Title Material Design switch">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefWidth="55.0" styleClass="box">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="333.0" styleClass="title2" text="Java Material Design switch">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXToggleButton contentDisplay="RIGHT" graphicTextGap="0.0" prefHeight="44.0" prefWidth="65.0" size="12.0" styleClass="card7-toggle-btn" text=" ">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefWidth="55.0" styleClass="box">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="333.0" styleClass="title2" text="Java Material Design switch">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXToggleButton contentDisplay="RIGHT" graphicTextGap="0.0" prefHeight="44.0" prefWidth="65.0" size="12.0" styleClass="card7-toggle-btn" text=" " toggleColor="#428bca" toggleLineColor="#6e9fca">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefWidth="55.0" styleClass="box">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="333.0" styleClass="title2" text="Java Material Design switch">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXToggleButton contentDisplay="RIGHT" graphicTextGap="0.0" prefHeight="44.0" prefWidth="65.0" size="12.0" styleClass="card7-toggle-btn" text=" " toggleColor="#5bc0de" toggleLineColor="#a0cddb">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefWidth="55.0" styleClass="box">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="333.0" styleClass="title2" text="Java Material Design switch">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXToggleButton contentDisplay="RIGHT" graphicTextGap="0.0" prefHeight="44.0" prefWidth="65.0" size="12.0" styleClass="card7-toggle-btn" text=" " toggleColor="#f0ad4e" toggleLineColor="#ebcda1">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefWidth="55.0" styleClass="box">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="333.0" styleClass="title2" text="Java Material Design switch">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXToggleButton contentDisplay="RIGHT" graphicTextGap="0.0" prefHeight="44.0" prefWidth="65.0" size="12.0" styleClass="card7-toggle-btn" text=" " toggleColor="#d9534f" toggleLineColor="#d29896">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </FlowPane>
+   </content>
+</ScrollPane>
