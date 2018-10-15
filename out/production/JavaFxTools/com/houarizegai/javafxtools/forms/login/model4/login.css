@@ -1,0 +1,81 @@
+* {
+    -fx-font-family: Tahoma;
+}
+
+/* Start Login Part */
+
+.title {
+    -fx-font-size: 38;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, #00B8D4 0%, #2196f3 50%);
+}
+
+.txt {
+    -fx-fill: #666;
+    -fx-font-size: 15px
+}
+
+.field {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 45px;
+    -jfx-focus-color: #2196f3;
+    -fx-prompt-text-fill: #999;
+    -fx-font-size: 18px
+}
+
+.check-remember-me {
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+.btn {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 45px;
+    -fx-background-color: #2196f3;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 18px
+}
+
+.btn:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #007bff
+}
+
+/* End Login Part */
+
+/* Start Login Part */
+
+.title-reset {
+    -fx-font-size: 26;
+}
+
+.txt-forget-password {
+    -fx-font-size: 17px;
+    -fx-fill: #333
+}
+
+.btn-back {
+    -fx-pref-width: 100px;
+}
+
+.txt-congrate {
+    -fx-font-size: 17px;
+    -fx-fill: #00C853;
+}
+
+/* End Login Part */
+
+/* Start SnackBar */
+
+/* Start Snackbar */
+
+.jfx-snackbar-content {
+    -fx-background-color: #2196f3;
+    -fx-pref-width: 380
+}
+.jfx-snackbar-toast {
+    -fx-text-fill: #FFF;
+    -fx-font-size: 18px;
+    -fx-font-family: Tahoma
+}
+/* End SnackBar */

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1192.0" style="-fx-background-color: #FFF;" stylesheets="@menu.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+    <children>
+      <HBox alignment="CENTER_LEFT" layoutX="23.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="700.0" spacing="20.0">
+         <children>
+            <Label prefHeight="50.0" styleClass="title-header" text="Part Title">
+               <font>
+                  <Font name="Tahoma" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

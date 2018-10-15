@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxWidth="-Infinity" style="-fx-background-color: #999;" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/photography3.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" fillWidth="false" spacing="40.0">
+         <children>
+            <VBox alignment="CENTER" fillWidth="false" spacing="10.0">
+               <children>
+                  <StackPane>
+                     <children>
+                        <Circle fill="TRANSPARENT" radius="30.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Label text="M" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello there !, sign in to start your first session" textAlignment="CENTER" wrappingWidth="196.0390625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox spacing="20.0">
+               <children>
+                  <TextField promptText="Username" styleClass="field" />
+                  <PasswordField promptText="Password" styleClass="field" />
+                  <JFXCheckBox checkedColor="#2196f3" selected="true" styleClass="checkbox" text="Keep me signed in">
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </JFXCheckBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </VBox>
+            <JFXButton styleClass="btn" text="Sign In" />
+            <Line endX="310.0" stroke="#6b4646" />
+            <Label styleClass="lbl-link" text="Forget Password ?" />
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</StackPane>
