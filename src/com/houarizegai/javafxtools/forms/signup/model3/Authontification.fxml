@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="root" stylesheets="@authontification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.forms.signup.model3.AuthontificationController">
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" styleClass="root" stylesheets="@authontification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.forms.signup.model3.AuthontificationController">
    <children>
       <AnchorPane layoutY="60.0" prefHeight="480.0" prefWidth="1000.0" style="-fx-background-color: #333;">
          <children>
@@ -75,6 +75,15 @@
                   </HBox>
                </children>
             </VBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" spacing="5.0" StackPane.alignment="TOP_RIGHT">
+               <children>
+                  <Label ellipsisString=" " onMouseClicked="#onHide" styleClass="min-btn" />
+                  <Label onMouseClicked="#onClose" styleClass="close-btn" />
+               </children>
+               <StackPane.margin>
+                  <Insets right="-20.0" top="10.0" />
+               </StackPane.margin>
+            </HBox>
          </children>
          <padding>
             <Insets left="30.0" right="30.0" />

@@ -1,5 +1,5 @@
 .root {
-    -fx-background-color: rgba(0,0,0,0);
+    -fx-background-color: #999
 }
 
 /* Start background */
@@ -49,6 +49,30 @@
     -fx-background-radius: 4;
     -fx-font-size: 18px;
     -fx-cursor: hand;
+}
+
+.close-btn{
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #FC5653;
+    -fx-background-radius: 100%;
+}
+.close-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color: red;
+    -fx-background-radius: 100%;
+}
+
+.min-btn{
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #29CC41;
+    -fx-background-radius: 100%;
+}
+.min-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color: green;
+    -fx-background-radius: 100%;
 }
 
 /* End Login */

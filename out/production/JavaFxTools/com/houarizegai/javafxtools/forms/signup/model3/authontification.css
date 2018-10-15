@@ -51,4 +51,28 @@
     -fx-cursor: hand;
 }
 
+.close-btn{
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #FC5653;
+    -fx-background-radius: 100%;
+}
+.close-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color: red;
+    -fx-background-radius: 100%;
+}
+
+.min-btn{
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #29CC41;
+    -fx-background-radius: 100%;
+}
+.min-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color: green;
+    -fx-background-radius: 100%;
+}
+
 /* End Login */
