@@ -1,0 +1,54 @@
+.root {
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+/* Start background */
+
+.lbl-title {
+    -fx-text-fill: #FFF;
+    -fx-font-size: 22px
+}
+
+.txt {
+    -fx-fill: #DDD;
+    -fx-font-size: 16px
+}
+
+.btn {
+    -fx-pref-width: 120px;
+    -fx-pref-height: 35px;
+    -fx-text-fill: #DDD;
+    -fx-font-size: 16px;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-color: #DDD;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-cursor: hand;
+}
+
+/* End background */
+
+/* Start Login */
+
+.title-login {
+    -fx-font-size: 26px;
+    -fx-text-fill: #F60
+}
+
+.field {
+    -fx-font-size: 18px;
+    -jfx-focus-color: #F60
+}
+
+.btn-login {
+    -fx-background-color: #F60;
+    -fx-text-fill: #FFF;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 4;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+}
+
+/* End Login */

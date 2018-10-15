@@ -17,7 +17,7 @@
 
 <StackPane fx:id="paneRoot" style="-fx-background-color: #FFF;" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.forms.login.model4.LoginController">
    <children>
-      <VBox fx:id="paneLogin" alignment="TOP_CENTER" spacing="15.0">
+      <VBox fx:id="paneLogin" alignment="TOP_CENTER" spacing="15.0" visible="false">
          <children>
             <VBox alignment="TOP_CENTER">
                <children>
@@ -48,7 +48,7 @@
             <Insets bottom="50.0" left="30.0" right="30.0" top="20.0" />
          </padding>
       </VBox>
-      <VBox fx:id="paneForgetRoot" alignment="TOP_CENTER" spacing="15.0" visible="false">
+      <VBox fx:id="paneForgetRoot" alignment="TOP_CENTER" spacing="15.0">
          <children>
             <Label text="Reset Password">
                <styleClass>
@@ -92,7 +92,7 @@
                         </JFXButton>
                      </children>
                   </VBox>
-                  <VBox fx:id="paneForgetCongrate" alignment="TOP_CENTER" spacing="20.0" visible="false">
+                  <VBox fx:id="paneForgetCongrate" alignment="TOP_CENTER" spacing="20.0">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -107,14 +107,14 @@
                               <Insets />
                            </VBox.margin>
                         </Text>
-                        <JFXButton onAction="#onBackToLogin" prefWidth="250.0" text="Back To Login">
+                        <JFXButton onAction="#onBackToLogin" prefWidth="161.0" text="Back To Login">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
                            <styleClass>
                               <String fx:value="btn" />
                               <String fx:value="btn-back" />
                            </styleClass>
-                           <VBox.margin>
-                              <Insets top="40.0" />
-                           </VBox.margin>
                         </JFXButton>
                      </children>
                   </VBox>

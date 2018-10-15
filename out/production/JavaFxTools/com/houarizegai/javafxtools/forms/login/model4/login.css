@@ -43,7 +43,7 @@
 
 /* End Login Part */
 
-/* Start Login Part */
+/* Start Forget Part */
 
 .title-reset {
     -fx-font-size: 26;
@@ -55,7 +55,7 @@
 }
 
 .btn-back {
-    -fx-pref-width: 100px;
+    -fx-pref-width: 160px;
 }
 
 .txt-congrate {
@@ -63,11 +63,9 @@
     -fx-fill: #00C853;
 }
 
-/* End Login Part */
+/* End Forget Part */
 
 /* Start SnackBar */
-
-/* Start Snackbar */
 
 .jfx-snackbar-content {
     -fx-background-color: #2196f3;
