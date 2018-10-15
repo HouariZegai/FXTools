@@ -107,7 +107,7 @@
                               <Insets />
                            </VBox.margin>
                         </Text>
-                        <JFXButton maxWidth="-Infinity" onAction="#onBackToLogin" prefWidth="129.0" text="Back To Login">
+                        <JFXButton onAction="#onBackToLogin" prefWidth="161.0" text="Back To Login">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
