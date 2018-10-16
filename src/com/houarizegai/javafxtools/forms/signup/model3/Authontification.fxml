@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" styleClass="root" stylesheets="@authontification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.forms.signup.model3.AuthontificationController">
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" stylesheets="@authontification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.forms.signup.model3.AuthontificationController">
    <children>
       <AnchorPane layoutY="60.0" prefHeight="480.0" prefWidth="1000.0" style="-fx-background-color: #333;">
          <children>
@@ -41,7 +41,7 @@
       </AnchorPane>
       <StackPane fx:id="rootSign" layoutX="500.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #FFF;">
          <children>
-            <VBox fx:id="paneSignUp" alignment="CENTER_LEFT" spacing="20.0" visible="false">
+            <VBox fx:id="paneSignUp" alignment="CENTER_LEFT" spacing="20.0">
                <children>
                   <Label styleClass="title-login" text="Sign Up" />
                   <JFXTextField fx:id="fieldFullNameSignUp" promptText="Full Name" styleClass="field" />
@@ -60,7 +60,7 @@
                   <Insets />
                </StackPane.margin>
             </VBox>
-            <VBox fx:id="paneSignIn" alignment="CENTER_LEFT" spacing="20.0">
+            <VBox fx:id="paneSignIn" alignment="CENTER_LEFT" spacing="20.0" visible="false">
                <children>
                   <Label styleClass="title-login" text="Sign In" />
                   <JFXTextField fx:id="fieldEmailSignIn" promptText="Email" styleClass="field" />
