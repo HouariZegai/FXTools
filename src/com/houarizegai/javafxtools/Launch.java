@@ -14,14 +14,18 @@ public class Launch extends Application {
     public static Stage stage;
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/forms/signup/model4/Authontification.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/forms/authentification/model4/Authentification.fxml"));
         Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
-        stage.initStyle(StageStyle.TRANSPARENT);
         stage.setTitle("JavaFx Tools");
         Launch.stage = stage;
+        //Launch.makeStageTransparent();
         stage.show();
+    }
+
+    public static void makeStageTransparent() {
+        stage.getScene().setFill(Color.TRANSPARENT);
+        stage.initStyle(StageStyle.TRANSPARENT);
     }
 
 }

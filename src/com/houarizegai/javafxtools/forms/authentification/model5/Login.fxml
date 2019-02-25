@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="550.0" prefWidth="500.0" spacing="10.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bootstrapLogo.png" />
+         </image>
+      </ImageView>
+      <Label styleClass="title" text="Login Form" />
+      <Label alignment="CENTER" prefHeight="81.0" prefWidth="283.0" text="Build form controls with floating labels via placeholder from beginner to advanced" textAlignment="CENTER" wrapText="true" />
+      <VBox prefHeight="220.0" prefWidth="360.0" spacing="15.0">
+         <children>
+            <TextField prefHeight="50.0" prefWidth="360.0" promptText="Email address" styleClass="field" />
+            <PasswordField prefHeight="50.0" prefWidth="360.0" promptText="Password" styleClass="field" />
+            <JFXCheckBox checkedColor="#007bff" styleClass="checkbox" text="Remember me" />
+            <JFXButton prefHeight="50.0" prefWidth="360.0" styleClass="btn" text="Sign in" />
+         </children>
+      </VBox>
+      <Label styleClass="footer-text" text="© 2017-2018">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" top="40.0" />
+   </padding>
+</VBox>
