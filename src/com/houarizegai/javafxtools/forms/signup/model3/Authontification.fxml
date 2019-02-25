@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" styleClass="root" stylesheets="@authontification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.forms.signup.model3.AuthontificationController">
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" stylesheets="@authontification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.forms.signup.model3.AuthontificationController">
    <children>
       <AnchorPane layoutY="60.0" prefHeight="480.0" prefWidth="1000.0" style="-fx-background-color: #333;">
          <children>
