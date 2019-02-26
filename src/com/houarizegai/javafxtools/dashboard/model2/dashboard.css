@@ -1,0 +1,51 @@
+* {
+    -fx-font-family: Tahoma;
+}
+
+/* Start Nav */
+
+.nav {
+    -fx-background-color: #444;
+}
+
+.nav-title {
+    -fx-font-size: 20px;
+    -fx-text-fill: #FFF;
+}
+
+.nav-link {
+    -fx-font-size: 16px;
+    -fx-text-fill: #EEE;
+}
+
+.nav-link:hover {
+    -fx-text-fill: #FFF;
+    -fx-underline: true;
+    -fx-cursor: hand
+}
+
+.nav-profile {
+    -fx-background-color: #333;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.nav-profile-txt {
+    -fx-font-size: 15px;
+    -fx-text-fill: #EEE;
+}
+
+/* End Nav */
+
+/* Start Header */
+
+.header {
+    -fx-background-color: #FFF;
+    -fx-font-size: 17px;
+}
+
+.header-title {
+    -fx-font-weight: bold;
+}
+
+/* End Header */

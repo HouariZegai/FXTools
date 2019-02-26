@@ -14,7 +14,7 @@ public class Launch extends Application {
     public static Stage stage;
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/forms/authentification/model4/Authentification.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model2/Dashboard.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("JavaFx Tools");
