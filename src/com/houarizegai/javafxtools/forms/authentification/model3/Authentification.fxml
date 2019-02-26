@@ -41,7 +41,7 @@
       </AnchorPane>
       <StackPane fx:id="rootSign" layoutX="500.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #FFF;">
          <children>
-            <VBox fx:id="paneSignUp" alignment="CENTER_LEFT" spacing="20.0" visible="false">
+            <VBox fx:id="paneSignUp" alignment="CENTER_LEFT" spacing="20.0">
                <children>
                   <Label styleClass="title-login" text="Sign Up" />
                   <JFXTextField fx:id="fieldFullNameSignUp" promptText="Full Name" styleClass="field" />
@@ -60,7 +60,7 @@
                   <Insets />
                </StackPane.margin>
             </VBox>
-            <VBox fx:id="paneSignIn" alignment="CENTER_LEFT" spacing="20.0">
+            <VBox fx:id="paneSignIn" alignment="CENTER_LEFT" spacing="20.0" visible="false">
                <children>
                   <Label styleClass="title-login" text="Sign In" />
                   <JFXTextField fx:id="fieldEmailSignIn" promptText="Email" styleClass="field" />
