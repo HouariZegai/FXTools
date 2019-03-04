@@ -1,9 +1,5 @@
 * {
-    -fx-font-family: Tahoma;
-    -fx-color-base: #F00;
-    -fx-color-base2: #F00;
-    -fx-color-base3: #F00;
-    -fx-color-base4: #F00
+    -fx-font-family: Tahoma
 }
 
 /* Start Nav */
@@ -77,6 +73,17 @@
 
 .details {
     -fx-background-color: #FFF;
+    -fx-padding: 20px
+}
+
+.details-btn {
+    -fx-font-size: 16px;
+    -fx-text-fill: #EEE;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 5;
+    -jfx-button-type: RAISED;
+    -fx-cursor: hand
 }
 
 /* End Details */
