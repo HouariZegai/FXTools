@@ -1,5 +1,9 @@
 * {
     -fx-font-family: Tahoma;
+    -fx-color-base: #F00;
+    -fx-color-base2: #F00;
+    -fx-color-base3: #F00;
+    -fx-color-base4: #F00
 }
 
 /* Start Nav */
@@ -44,8 +48,35 @@
     -fx-font-size: 17px;
 }
 
+.header2 {
+    -fx-background-color: #E7EEF4
+}
+
 .header-title {
     -fx-font-weight: bold;
 }
 
+.header-cards-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold
+}
+
+.header-cards-txt {
+    -fx-font-size: 16px
+}
+
+.header-cards-box {
+    -fx-padding: 10px 20px;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 5;
+}
+
 /* End Header */
+
+/* Start Details */
+
+.details {
+    -fx-background-color: #FFF;
+}
+
+/* End Details */

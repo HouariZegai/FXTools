@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
-
+<?import javafx.scene.text.TextFlow?>
 
 <StackPane fx:id="root" prefHeight="680.0" prefWidth="1300.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.dashboard.model2.Dashboard">
    <children>
@@ -56,7 +56,7 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </HBox>
-            <StackPane prefHeight="80.0" styleClass="header">
+            <StackPane prefHeight="70.0" styleClass="header">
                <children>
                   <HBox maxHeight="-Infinity" maxWidth="-Infinity" spacing="5.0" StackPane.alignment="CENTER_LEFT">
                      <children>
@@ -75,15 +75,110 @@
                   <Insets left="60.0" right="60.0" />
                </padding>
             </StackPane>
-            <HBox alignment="CENTER" prefHeight="250.0">
+            <HBox alignment="CENTER" prefHeight="250.0" spacing="50.0" styleClass="header2">
                <children>
-                  <Circle fill="#ffffff00" radius="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0">
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </Circle>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" spacing="20.0">
+                     <children>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity">
+                           <children>
+                              <Circle fill="#ffffff00" radius="50.0" stroke="#2196f3" strokeType="INSIDE" strokeWidth="3.0" />
+                              <FontAwesomeIconView fill="#2196f3" glyphName="BELL" size="25" />
+                           </children>
+                        </StackPane>
+                        <HBox alignment="CENTER" spacing="5.0">
+                           <children>
+                              <Label styleClass="header-cards-title" text="25 new" />
+                              <Label styleClass="header-cards-txt" text="orders" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="5.0" styleClass="header-cards-box">
+                           <children>
+                              <Label styleClass="header-cards-title" text="25 active" />
+                              <Label styleClass="header-cards-txt" text="products" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" spacing="20.0">
+                     <children>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity">
+                           <children>
+                              <Circle fill="#ffffff00" radius="50.0" stroke="#ff8800" strokeType="INSIDE" strokeWidth="3.0" />
+                              <FontAwesomeIconView fill="#ff8800" glyphName="CHECK" size="32" />
+                           </children>
+                        </StackPane>
+                        <HBox alignment="CENTER" spacing="5.0">
+                           <children>
+                              <Label styleClass="header-cards-title" text="\$123" />
+                              <Label styleClass="header-cards-txt" text="generated" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="5.0" styleClass="header-cards-box">
+                           <children>
+                              <Label styleClass="header-cards-title" text="12 items" />
+                              <Label styleClass="header-cards-txt" text="pending approval" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" spacing="20.0">
+                     <children>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity">
+                           <children>
+                              <Circle fill="#ffffff00" radius="50.0" stroke="#02c852" strokeType="INSIDE" strokeWidth="3.0" />
+                              <FontAwesomeIconView fill="#02c852" glyphName="BUS" size="25" />
+                           </children>
+                        </StackPane>
+                        <HBox alignment="CENTER" spacing="5.0">
+                           <children>
+                              <Label styleClass="header-cards-title" text="\$385" />
+                              <Label styleClass="header-cards-txt" text="balance" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="5.0" styleClass="header-cards-box">
+                           <children>
+                              <Label styleClass="header-cards-title" text="5 projected products" />
+                              <Label styleClass="header-cards-txt" text="see why" textFill="#ec407a" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" spacing="20.0">
+                     <children>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity">
+                           <children>
+                              <Circle fill="#ffffff00" radius="50.0" stroke="#ff3547" strokeType="INSIDE" strokeWidth="3.0" />
+                              <FontAwesomeIconView fill="#ff3547" glyphName="BRIEFCASE" size="25" />
+                           </children>
+                        </StackPane>
+                        <HBox alignment="CENTER" spacing="5.0">
+                           <children>
+                              <Label styleClass="header-cards-title" text="12 new" />
+                              <Label styleClass="header-cards-txt" text="approvals" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="5.0" styleClass="header-cards-box">
+                           <children>
+                              <Label styleClass="header-cards-title" text="\$5236" />
+                              <Label styleClass="header-cards-txt" text="total earnning" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
                </children>
             </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="details">
+               <children>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Orders" />
+                        <Label text=" &amp; " />
+                        <Label text="Sales" />
+                        <Label text=" by day" />
+                     </children>
+                  </TextFlow>
+               </children>
+            </VBox>
          </children>
       </VBox>
    </children>
