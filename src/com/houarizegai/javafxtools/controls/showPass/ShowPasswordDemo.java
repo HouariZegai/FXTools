@@ -1,9 +1,16 @@
 package com.houarizegai.javafxtools.controls.showPass;
 
+import de.jensd.fx.glyphs.materialicons.MaterialIcon;
+import de.jensd.fx.glyphs.materialicons.MaterialIconView;
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class ShowPasswordDemo extends Application {
@@ -12,15 +19,27 @@ public class ShowPasswordDemo extends Application {
 
         JFXShowPasswordField showPassField = new JFXShowPasswordField();
         showPassField.getField().setPromptText("Type Password");
-        showPassField.getField().setStyle("-fx-font-size: 24px; -fx-text-fill: #E00");
+        showPassField.getField().setStyle("-fx-font-size: 24px");
 
-        Button btn = new Button("Show/Hide");
-        btn.setOnAction(e -> showPassField.setShowPass(!showPassField.isShowing()));
+        MaterialIconView iconVisible = new MaterialIconView(MaterialIcon.VISIBILITY_OFF);
+        iconVisible.setSize("25px");
 
-        VBox root = new VBox(10);
-        root.getChildren().addAll(showPassField, btn);
+        iconVisible.setOnMouseClicked(e -> {
+            if(showPassField.isShowing()) {
+                showPassField.setShowPass(false);
+                iconVisible.setIcon(MaterialIcon.VISIBILITY_OFF);
+            } else {
+                showPassField.setShowPass(true);
+                iconVisible.setIcon(MaterialIcon.VISIBILITY);
+            }
+        });
 
-        Scene scene = new Scene(root, 300, 250);
+        HBox container = new HBox(5);
+        container.setMaxSize(Region.USE_PREF_SIZE, Region.USE_PREF_SIZE);
+        container.setAlignment(Pos.CENTER);
+        container.getChildren().addAll(showPassField, iconVisible);
+
+        Scene scene = new Scene(new StackPane(container), 500, 250);
         primaryStage.setTitle("Demo");
         primaryStage.setScene(scene);
         primaryStage.show();
