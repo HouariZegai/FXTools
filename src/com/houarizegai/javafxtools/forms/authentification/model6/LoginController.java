@@ -12,15 +12,14 @@ public class LoginController implements Initializable {
 
     @FXML
     private VBox root;
-    
+
     @FXML
     private JFXSnackbar toastMsg;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         toastMsg = new JFXSnackbar(root);
-        toastMsg.getStylesheets().add("img.css");
-        
+
         root.setOnKeyReleased(e -> {
             if(e.getCode().equals(KeyCode.ENTER)) {
                 onLogin();
