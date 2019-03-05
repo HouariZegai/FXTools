@@ -10,6 +10,10 @@ public class CSSFXGeneratorDemo {
                 .setBackgroundRadius(10)
                 .setFill("#FFF")
                 .setTextFill("RED")
+                .setBorder("15px", "solid", "#E00")
+                .setUnderline(true)
+                .setPadding("10px", "15px", "0", "5px")
+                .setMargin("15px")
                 .build();
 
         System.out.println(style);
