@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7ccd5cb0-aa75-4941-80e7-293afecb36e6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<style name="Table_TH" mode="Opaque" backcolor="#8B008B">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFBFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#E2BFE2"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="Dataset1" uuid="956023c0-fcb9-4abe-8a42-90cf3b6c3924">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString language="SQL">
+			<![CDATA[select * from login]]>
+		</queryString>
+		<field name="IDLogin" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="IDLogin"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+		</field>
+		<field name="NomUtilisateur" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="NomUtilisateur"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+		</field>
+		<field name="MotDePasse" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="MotDePasse"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+		</field>
+	</subDataset>
+	<queryString>
+		<![CDATA[SELECT * FROM login]]>
+	</queryString>
+	<field name="IDLogin" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="IDLogin"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+	</field>
+	<field name="NomUtilisateur" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NomUtilisateur"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+	</field>
+	<field name="MotDePasse" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="MotDePasse"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+	</field>
+	<variable name="IDLogin1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{IDLogin}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="26" width="555" height="30" forecolor="#2196F3" backcolor="#FFFFFF" uuid="08eb0230-a5eb-45f8-ac09-8bdbf021e47c"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Tahoma" size="20" isBold="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<text><![CDATA[Account information]]></text>
+			</staticText>
+			<image>
+				<reportElement x="455" y="5" width="100" height="74" uuid="6b8f8d27-133e-4ed9-85f8-4a0be6998043"/>
+				<imageExpression><![CDATA["src/com/houarizegai/javafxtools/reports/book.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="5" width="100" height="74" uuid="99d3c17e-4afe-4e5f-b4ee-059cc3b87c3a"/>
+				<imageExpression><![CDATA["src/com/houarizegai/javafxtools/reports/book.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="0" width="350" height="61" forecolor="#108F2F" uuid="9fcfa4c2-b5dc-40e9-934b-2f911b5d2135"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Tahoma" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[This information of all users are created account in Commercial Management System Application]]></text>
+			</staticText>
+			<textField pattern="HH:mm:ss">
+				<reportElement x="0" y="39" width="111" height="22" uuid="510ea2ac-8bb3-4840-92cf-cd39bb2f3fae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="M/d/yyyy">
+				<reportElement x="440" y="39" width="115" height="21" uuid="f37f97ad-5e9d-4957-83f4-8e82f22fb26e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="0" width="555" height="60" uuid="6ab46970-f5df-4936-8826-880a629e9a8b">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="a597ce8e-5df2-4c61-a6a7-e613e6cce1c3">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="122" uuid="09a1a3bb-adab-4266-a340-1234fdd6b1b9">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="122" height="30" uuid="ff057c09-318f-4e3e-96f1-5b7ee83d9268"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma" size="14" isBold="false"/>
+								</textElement>
+								<text><![CDATA[ID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="122" height="30" uuid="cbb4a1c8-e03f-4473-af49-4365b93a0d09"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{IDLogin}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="248" uuid="2b86ec5f-780a-438b-af38-87244c44f187">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="248" height="30" uuid="480cf12a-fbcd-4385-90ba-0905b99c2c7f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma" size="14" isBold="false"/>
+								</textElement>
+								<text><![CDATA[Username]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="248" height="30" uuid="0e1142b8-e5ba-455c-9415-e7b042067da9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{NomUtilisateur}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="185" uuid="aa0c84d6-1b51-4820-bf02-b5702396f270">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="185" height="30" uuid="982fd22c-473a-4fb2-b0f7-736df5525aa4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Tahoma" size="14" isBold="false"/>
+								</textElement>
+								<text><![CDATA[Password]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="185" height="30" uuid="ab180d6c-554a-4a3c-b500-547e769fc9e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{MotDePasse}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="330" y="10" width="130" height="30" uuid="999479d4-0924-40e9-8691-b9ec195b61dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Number of Account:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="10" width="100" height="30" uuid="3668b1ec-6ce7-49c5-a737-77af1254a317"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IDLogin1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="59" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="14" width="100" height="30" uuid="5b773bdf-c44f-4912-8bfb-22bb922b13de"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="280" y="14" width="100" height="30" uuid="1985f82b-5ca2-46d7-92ac-c1232d8b1a8e"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" / " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="247" splitType="Stretch">
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="10" width="555" height="230" uuid="d3d38da1-5187-420d-882e-37f7298962f4"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="Dataset1" uuid="413a11fd-b9ce-408d-8a4f-b579e830fde9"/>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{NomUtilisateur}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{IDLogin}]]></valueExpression>
+						<labelExpression><![CDATA[$F{MotDePasse}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</summary>
+</jasperReport>
