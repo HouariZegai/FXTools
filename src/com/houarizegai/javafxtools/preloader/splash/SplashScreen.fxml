@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" stylesheets="@splash-screen.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.preloader.splash.SplashScreenController">
+   <children>
+      <Label layoutX="176.0" layoutY="41.0" styleClass="title" text="Splash Screen" />
+      <Label layoutX="120.0" layoutY="88.0" styleClass="lbl" text="Please wait until load the application" />
+      <JFXSpinner fx:id="progress" layoutX="207.0" layoutY="133.0" prefHeight="64.0" prefWidth="98.0" progress="0.0" />
+   </children>
+</AnchorPane>

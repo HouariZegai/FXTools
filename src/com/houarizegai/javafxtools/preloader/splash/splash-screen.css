@@ -1,0 +1,12 @@
+* {
+    -fx-font-family: Tahoma;
+}
+
+.title {
+    -fx-font-size: 26px;
+}
+
+.lbl {
+    -fx-font-size: 17px;
+    -fx-text-fill: #666;
+}
