@@ -1,0 +1,37 @@
+* {
+    -second-color: #FFF;
+}
+
+.container {
+    -fx-background-color: linear-gradient(to top, derive(#0e91f3, 50%), derive(#2196f3, 50%));
+}
+
+.title {
+    -fx-text-fill: #FFF;
+    -fx-font-size: 50px;
+}
+
+.sub-title {
+    -fx-font-size: 16px;
+    -fx-text-fill: #EEE
+}
+
+.footer-lbl {
+    -fx-text-fill: #DDD;
+}
+
+.line {
+    -fx-stroke: #DDD
+}
+
+/* Start JFXProgress */
+
+.jfx-progress-bar:determinate .bar {
+    -fx-background-color : white;
+}
+
+.jfx-progress-bar:determinate .track {
+    -fx-background-color : transparent;
+}
+
+/* End JFXProgress */
