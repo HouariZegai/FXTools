@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@splash.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="65.0" layoutY="37.0" spacing="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <FontAwesomeIconView glyphName="INSTITUTION" size="60" styleClass="icon" />
+            <Label styleClass="title" text="Commercial Management System" />
+            <Label styleClass="sub-title" text="The best solution for manage your company" />
+            <VBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <JFXProgressBar prefHeight="3.0" prefWidth="400.0" progress="0.28" />
+                  <Label style="-fx-font-family: Arial;" text="LOADING.." />
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <Label layoutX="409.0" layoutY="380.0" styleClass="footer-lbl" text="Copyright c 2019 all right reserved" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>
