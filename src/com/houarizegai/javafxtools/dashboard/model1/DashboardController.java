@@ -111,7 +111,7 @@ public class DashboardController implements Initializable {
     private void onTitle1() {
         styleBox(1);
         try {
-            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/ItemPane.fxml"));
+            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/SectionView.fxml"));
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
@@ -122,7 +122,7 @@ public class DashboardController implements Initializable {
     private void onTitle2() {
         styleBox(2);
         try {
-            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/RightPane.fxml"));
+            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/SectionView.fxml"));
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
@@ -133,7 +133,7 @@ public class DashboardController implements Initializable {
     private void onTitle3() {
         styleBox(3);
         try {
-            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/RightPane.fxml"));
+            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/SectionView.fxml"));
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
@@ -144,7 +144,7 @@ public class DashboardController implements Initializable {
     private void onTitle4() {
         styleBox(4);
         try {
-            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/RightPane.fxml"));
+            ItemPane = FXMLLoader.load(getClass().getResource("/com/houarizegai/javafxtools/dashboard/model1/SectionView.fxml"));
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }

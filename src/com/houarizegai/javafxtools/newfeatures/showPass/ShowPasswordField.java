@@ -1,4 +1,4 @@
-package com.houarizegai.javafxtools.controls.showPass;
+package com.houarizegai.javafxtools.newfeatures.showPass;
 
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;

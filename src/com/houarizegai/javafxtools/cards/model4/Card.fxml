@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <VBox maxHeight="-Infinity" prefHeight="202.0" prefWidth="300.0" styleClass="card" stylesheets="@card.css">
+        <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="298.0">
+                <children>
+                    <Label text="Header" />
+                </children>
+                <padding>
+                    <Insets left="20.0" right="20.0" />
+                </padding>
+            </HBox>
+            <VBox prefHeight="123.0" prefWidth="258.0" spacing="10.0">
+                <children>
+                    <Label styleClass="title" text="Dark card title" />
+                    <Label styleClass="text" text="Some quick example text to build on the card title and make up the bulk of the card's content." wrapText="true" />
+                </children>
+                <VBox.margin>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                </VBox.margin>
+            </VBox>
+        </children>
+    </VBox>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</StackPane>

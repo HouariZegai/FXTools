@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.charts.linechart.LineChartController">
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.charts.linechart.LineChartController">
    <children>
-      <LineChart fx:id="lineChart" layoutX="16.0" layoutY="72.0" prefHeight="441.0" prefWidth="980.0">
+      <LineChart fx:id="lineChart" prefHeight="441.0" prefWidth="980.0">
          <xAxis>
             <CategoryAxis label="Month" side="BOTTOM" />
          </xAxis>
@@ -16,4 +18,7 @@
          </yAxis>
       </LineChart>
    </children>
-</AnchorPane>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</StackPane>

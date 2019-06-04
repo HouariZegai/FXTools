@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="232.0" styleClass="card" stylesheets="@card.css">
+        <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="230.0" text="كوتلين أساسيات- المقدمة" wrapText="true">
+                <StackPane.margin>
+                    <Insets top="70.0" />
+                </StackPane.margin>
+            </Label>
+        </children>
+    </StackPane>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</StackPane>

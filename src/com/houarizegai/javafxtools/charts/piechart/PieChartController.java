@@ -12,8 +12,6 @@ import javafx.scene.control.TextField;
 public class PieChartController implements Initializable {
 
     @FXML
-    private TextField name, value;
-    @FXML
     private PieChart pieChart;
     
     private ObservableList<PieChart.Data> data;
@@ -21,13 +19,17 @@ public class PieChartController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         data = FXCollections.observableArrayList();
+
+        // fill the pie chart by data
+        data.add(new PieChart.Data("Java", 70.5));
+        data.add(new PieChart.Data("C++", 45.5));
+        data.add(new PieChart.Data("PHP", 30.5));
+        data.add(new PieChart.Data("Python", 50.5));
+        data.add(new PieChart.Data("C#", 60d));
+
+        // set the data to the pie chart
         pieChart.setData(data);
+
     }
-    
-    @FXML
-    private void btnAdd() {
-        data.add(new PieChart.Data(name.getText(), Integer.valueOf(value.getText())));
-        pieChart.setData(data);
-    }
-    
+
 }

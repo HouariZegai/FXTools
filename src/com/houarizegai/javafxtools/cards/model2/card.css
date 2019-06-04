@@ -1,7 +1,7 @@
 
 .card {
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
-    -fx-background-image: url("../img/m2.jpg");
+    -fx-background-image: url("image.jpg");
     -fx-background-size: 230;
     -fx-background-repeat: none;
     -fx-background-radius: 10;

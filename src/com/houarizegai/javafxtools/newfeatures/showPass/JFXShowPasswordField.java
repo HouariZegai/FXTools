@@ -1,9 +1,8 @@
-package com.houarizegai.javafxtools.controls.showPass;
+package com.houarizegai.javafxtools.newfeatures.showPass;
 
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
 public class JFXShowPasswordField extends VBox {

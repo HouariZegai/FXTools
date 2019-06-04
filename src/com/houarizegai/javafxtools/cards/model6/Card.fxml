@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <VBox maxHeight="-Infinity" prefHeight="210.0" prefWidth="350.0" spacing="10.0" styleClass="card" stylesheets="@card.css">
+        <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+                <children>
+                    <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@man.png" />
+                        </image></ImageView>
+                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                        <children>
+                            <Label styleClass="title" text="Vinothbabu K" />
+                            <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="373.0" spacing="8.0">
+                                <children>
+                                    <FontAwesomeIconView glyphName="GITHUB_SQUARE" size="32">
+                                        <styleClass>
+                                            <String fx:value="font-social-media" />
+                                            <String fx:value="icon-github" />
+                                        </styleClass>
+                                    </FontAwesomeIconView>
+                                    <FontAwesomeIconView glyphName="YOUTUBE_SQUARE" size="32">
+                                        <styleClass>
+                                            <String fx:value="font-social-media" />
+                                            <String fx:value="icon-yt" />
+                                        </styleClass>
+                                    </FontAwesomeIconView>
+                                    <FontAwesomeIconView glyphName="LINKEDIN_SQUARE" size="32">
+                                        <styleClass>
+                                            <String fx:value="font-social-media" />
+                                            <String fx:value="icon-in" />
+                                        </styleClass>
+                                    </FontAwesomeIconView>
+                                    <FontAwesomeIconView glyphName="TWITTER_SQUARE" size="32">
+                                        <styleClass>
+                                            <String fx:value="font-social-media" />
+                                            <String fx:value="icon-tw" />
+                                        </styleClass>
+                                    </FontAwesomeIconView>
+                                </children></HBox>
+                        </children>
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                        <padding>
+                            <Insets bottom="20.0" left="10.0" top="10.0" />
+                        </padding>
+                    </VBox>
+                </children>
+            </HBox>
+            <Label styleClass="title" text="Vinothbabu K">
+                <VBox.margin>
+                    <Insets left="20.0" />
+                </VBox.margin>
+            </Label>
+            <Label styleClass="text" text="This is me. I am a Good Boy.This is the body content of this media.This can be used as an update panel." wrapText="true">
+                <VBox.margin>
+                    <Insets left="20.0" />
+                </VBox.margin>
+            </Label>
+        </children>
+        <padding>
+            <Insets bottom="10.0" right="20.0" />
+        </padding>
+    </VBox>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</StackPane>

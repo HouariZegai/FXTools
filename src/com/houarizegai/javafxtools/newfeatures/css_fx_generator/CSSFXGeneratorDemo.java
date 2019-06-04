@@ -1,4 +1,4 @@
-package com.houarizegai.javafxtools.css.css_fx_generator;
+package com.houarizegai.javafxtools.newfeatures.css_fx_generator;
 
 public class CSSFXGeneratorDemo {
     public static void main(String[] args) {

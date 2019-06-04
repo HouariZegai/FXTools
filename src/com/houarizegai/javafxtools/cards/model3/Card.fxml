@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="238.0" prefWidth="350.0" styleClass="card" stylesheets="@card.css">
+        <children>
+            <ImageView fitHeight="196.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@image.jpg" />
+                </image>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="350.0" spacing="10.0">
+                <children>
+                    <FontAwesomeIconView fill="#0d7bd0" glyphName="FOLDER" size="20" />
+                    <Label text="Programming" textFill="#0d7bd0">
+                        <font>
+                            <Font size="12.0" />
+                        </font>
+                    </Label>
+                </children>
+                <VBox.margin>
+                    <Insets left="10.0" right="10.0" />
+                </VBox.margin>
+            </HBox>
+            <Label prefHeight="36.0" prefWidth="350.0" text="Advanced Kotlin Programming Language" VBox.vgrow="ALWAYS">
+                <VBox.margin>
+                    <Insets left="10.0" right="10.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </children>
+    </VBox>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</StackPane>

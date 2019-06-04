@@ -12,6 +12,8 @@ import java.sql.SQLException;
 
 public class JasperReportDemo {
 	private static Connection con;
+	private static final String REPORT_PATH = "src\\com\\houarizegai\\javafxtools\\reports\\query_datasource\\AccountReport.jrxml";
+
 
     public static void main(String[] args) {
 		try {
@@ -33,8 +35,7 @@ public class JasperReportDemo {
 
     public static void openReport() {
     	try {
-	    	String path = "src\\com\\houarizegai\\javafxtools\\reports\\AccountReport.jrxml";
-	    	JasperReport jr = JasperCompileManager.compileReport(path);
+	    	JasperReport jr = JasperCompileManager.compileReport(REPORT_PATH);
 	    	JasperPrint jp = JasperFillManager.fillReport(jr, null, JasperReportDemo.con);
 	    	JasperViewer.viewReport(jp, false);
     	} catch(JRException jre) {
@@ -45,8 +46,7 @@ public class JasperReportDemo {
 
 	public static void openReportWithQuery() {
 		try {
-			String path = "src\\com\\houarizegai\\javafxtools\\reports\\AccountReport.jrxml";
-			JasperDesign jd = JRXmlLoader.load(path); // Load design of report (jrxml file)
+			JasperDesign jd = JRXmlLoader.load(REPORT_PATH); // Load design of report (jrxml file)
 
 			String sql = "SELECT * FROM login WHERE NomUtilisateur = 'Houari';";
 			JRDesignQuery designQuery = new JRDesignQuery();
