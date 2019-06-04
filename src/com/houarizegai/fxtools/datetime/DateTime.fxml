@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="10.0" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.fxtools.datetime.DateTimeController">
+   <children>
+      <Label fx:id="lblDate" maxHeight="-Infinity" maxWidth="-Infinity" text="Label">
+         <font>
+            <Font name="Tahoma" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" maxHeight="-Infinity" maxWidth="-Infinity" text="Label">
+         <font>
+            <Font name="Tahoma" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.fxtools.charts.linechart.LineChartController">
+   <children>
+      <LineChart fx:id="lineChart" prefHeight="441.0" prefWidth="980.0">
+         <xAxis>
+            <CategoryAxis label="Month" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis label="Min" side="LEFT" />
+         </yAxis>
+      </LineChart>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</StackPane>
