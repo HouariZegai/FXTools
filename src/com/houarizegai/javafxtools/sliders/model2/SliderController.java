@@ -39,22 +39,21 @@ public class SliderController implements Initializable {
     
     @FXML
     private void onPrevious() {
-        FadeTransition ft = new FadeTransition();
-        ft.setNode(imgSlider);
-        ft.setDuration(new Duration(4000));
-        ft.setFromValue(1.0);
-        ft.setToValue(0.3);
-        ft.setCycleCount(0);
-        ft.setAutoReverse(true);
-        ft.play();
-        imgSlider.setImage(new Image("com/houarizegai/javafxtools/sliders/img/slider/" + counter + ".png"));
-        if (--counter == 0) {
-            counter = 1;
+        if (--counter < 1) {
+            counter = NUMBER_IMAGE_SLIDER;
         }
+        imgFadeTransition(counter);
     }
 
     @FXML
     private void onNext() {
+        if (++counter > NUMBER_IMAGE_SLIDER) {
+            counter = 1;
+        }
+        imgFadeTransition(counter);
+    }
+
+    private void imgFadeTransition(int imgCounter) {
         FadeTransition ft = new FadeTransition();
         ft.setNode(imgSlider);
         ft.setDuration(new Duration(4000));
@@ -63,9 +62,8 @@ public class SliderController implements Initializable {
         ft.setCycleCount(0);
         ft.setAutoReverse(true);
         ft.play();
-        imgSlider.setImage(new Image("com/houarizegai/javafxtools/sliders/img/slider/" + counter + ".png"));
-        if (++counter > NUMBER_IMAGE_SLIDER) {
-            counter = 1;
-        }
+        System.out.println("before counter:" + imgCounter);
+        imgSlider.setImage(new Image("com/houarizegai/javafxtools/sliders/model2/img/" + imgCounter + ".png"));
+        System.out.println("after counter:");
     }
 }

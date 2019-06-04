@@ -37,7 +37,7 @@ public class SliderController implements Initializable {
             ft.setCycleCount(0);
             ft.setAutoReverse(true);
             ft.play();
-            imgSlider.setImage(new Image("com/houarizegai/javafxtools/sliders/img/slider/" + counter + ".png"));
+            imgSlider.setImage(new Image("com/houarizegai/javafxtools/sliders/model1/img/" + counter + ".png"));
             if (++counter > NUMBER_IMAGE_SLIDER) {
                 counter = 1;
             }

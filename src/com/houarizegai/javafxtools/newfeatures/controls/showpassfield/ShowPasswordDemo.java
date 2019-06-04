@@ -1,4 +1,4 @@
-package com.houarizegai.javafxtools.newfeatures.showPass;
+package com.houarizegai.javafxtools.newfeatures.controls.showpassfield;
 
 import de.jensd.fx.glyphs.materialicons.MaterialIcon;
 import de.jensd.fx.glyphs.materialicons.MaterialIconView;

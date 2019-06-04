@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane prefHeight="397.0" prefWidth="657.0" styleClass="foreground" stylesheets="@loader.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane prefHeight="397.0" prefWidth="657.0" styleClass="foreground" stylesheets="@splash-screen.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="576.0" prefWidth="481.0">
          <children>
