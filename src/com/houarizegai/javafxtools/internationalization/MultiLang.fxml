@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.javafxtools.internationalization.MultiLangController">
+   <children>
+      <Label fx:id="lblUsername" layoutX="73.0" layoutY="91.0" prefHeight="39.0" prefWidth="232.0" text="إسم المستخدم">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassword" layoutX="73.0" layoutY="147.0" prefHeight="39.0" prefWidth="232.0" text="كلمة السر">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="473.0" layoutY="20.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#setLangAR" text="AR" />
+            <Button mnemonicParsing="false" onAction="#setLangEN" text="EN" />
+            <Button mnemonicParsing="false" onAction="#setLangFR" text="FR" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
