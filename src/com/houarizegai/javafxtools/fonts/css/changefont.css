@@ -1,0 +1,8 @@
+@font-face {
+    src: url("../digital-7.ttf");
+}
+
+.lbl {
+    -fx-font-size: 28px;
+    -fx-font-family: "Digital-7";
+}

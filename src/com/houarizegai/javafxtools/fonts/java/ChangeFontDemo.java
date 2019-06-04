@@ -1,4 +1,4 @@
-package com.houarizegai.javafxtools.fonts;
+package com.houarizegai.javafxtools.fonts.java;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -12,9 +12,10 @@ public class ChangeFontDemo extends Application {
 
     @Override
     public void start(Stage stage) {
-        Font digitalFont = Font.loadFont(getClass().getResourceAsStream("/com/houarizegai/javafxtools/fonts/digitalfont/digital-7.ttf"), 50);
+        Font digitalFont = Font.loadFont(getClass().getResourceAsStream("/com/houarizegai/javafxtools/fonts/digital-7.ttf"), 50);
 
         Label lbl = new Label("0123456789 DA"); // Test digit number (using in sell system)
+        // change font using java
         lbl.setFont(digitalFont);
         lbl.setStyle("-fx-background-color: #333; -fx-text-fill: #FFF");
 
@@ -24,9 +25,5 @@ public class ChangeFontDemo extends Application {
         Scene scene = new Scene(new VBox(20, lbl, textField), 400, 400);
         stage.setScene(scene);
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        Application.launch(ChangeFontDemo.class);
     }
 }
