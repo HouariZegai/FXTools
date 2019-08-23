@@ -14,14 +14,14 @@ public class Launch extends Application {
     public static Stage stage;
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/fxtools/crud/model1/Management.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/fxtools/forms/authentification/model9/Authentification.fxml"));
         Scene scene = new Scene(root);
-        //scene.setFill(Color.TRANSPARENT);
+        scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
-        //stage.initStyle(StageStyle.TRANSPARENT);
+        stage.initStyle(StageStyle.TRANSPARENT);
         stage.setTitle("JavaFx Tools");
         Launch.stage = stage;
-        //Launch.makeStageTransparent();
+        Launch.makeStageTransparent();
         stage.show();
     }
 

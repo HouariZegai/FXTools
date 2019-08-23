@@ -1,0 +1,104 @@
+* {
+    /*-color-primary: linear-gradient(from 0% 0% to 100% 200%, repeat, #0adfff 0%, #2196f3 50%);*/
+    -color-primary: #2196f3
+}
+
+.root {
+    -fx-background-color: transparent
+}
+
+.parent {
+    -fx-background-color: transparent;
+}
+
+/* left part */
+
+.left-container {
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color: -color-primary;
+    -fx-background-radius: 20 0 0 20
+}
+
+.left-title {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF
+}
+
+.left-desc {
+    -fx-font-size: 18px;
+    -fx-fill: #FFF
+}
+
+.left-btn {
+    -fx-background-radius: 30;
+    -jfx-button-type: RAISED;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 45px;
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: -color-primary
+}
+
+/* right part */
+
+.right-container {
+    -fx-font-family: Tahoma;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 0 20 20 0
+}
+
+.right-login-btn {
+    -fx-background-radius: 30 0 0 30;
+    -jfx-button-type: RAISED;
+    -fx-pref-width: 90px;
+    -fx-pref-height: 30px;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-background-color: -color-primary;
+    -fx-text-fill: #FFF;
+}
+
+.right-register-btn {
+    -fx-background-radius: 0 30 30 0;
+    -jfx-button-type: RAISED;
+    -fx-pref-width: 90px;
+    -fx-pref-height: 30px;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: -color-primary
+}
+
+.right-form-lbl {
+    -fx-font-size: 17px;
+    -fx-text-fill: #333
+}
+
+.right-forms-field-container {
+    -fx-padding: 0 0 20px 0;
+}
+
+.right-form-field {
+    -fx-font-size: 15px;
+    -fx-prompt-text-fill: #777;
+    -jfx-focus-color: -color-primary;
+    -jfx-unfocus-color: #777
+}
+
+.right-form-check {
+    -jfx-checked-color: -color-primary;
+    -fx-cursor: hand
+}
+
+.right-form-btn {
+    -fx-background-radius: 30;
+    -jfx-button-type: RAISED;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 35px;
+    -fx-cursor: hand;
+    -fx-font-size: 15px;
+    -fx-background-color: -color-primary;
+    -fx-text-fill: #FFF
+}

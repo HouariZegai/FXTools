@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane styleClass="root" stylesheets="@authentification.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="760.0" styleClass="parent">
+         <children>
+            <StackPane styleClass="left-container" HBox.hgrow="ALWAYS">
+               <children>
+                  <FontAwesomeIconView fill="#eeeeee" glyphName="CLOSE" size="22" StackPane.alignment="TOP_LEFT">
+                     <StackPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </StackPane.margin>
+                  </FontAwesomeIconView>
+                  <VBox alignment="CENTER" prefWidth="380.0" spacing="30.0">
+                     <children>
+                        <Label styleClass="left-title" text="Welcome" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="left-desc" text="Thank you for the registration email was send on your email." textAlignment="CENTER" wrappingWidth="360.892578125" />
+                        <JFXButton styleClass="left-btn" text="Continue" />
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefWidth="380.0" styleClass="right-container" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="270.0" StackPane.alignment="CENTER_LEFT">
+                     <children>
+                        <VBox styleClass="right-forms-field-container">
+                           <children>
+                              <Label styleClass="right-form-lbl" text="FULL NAME" />
+                              <JFXTextField promptText="Enter your full name" styleClass="right-form-field" />
+                           </children>
+                        </VBox>
+                        <VBox styleClass="right-forms-field-container">
+                           <children>
+                              <Label styleClass="right-form-lbl" text="EMAIL" />
+                              <JFXTextField promptText="Enter you email" styleClass="right-form-field" />
+                           </children>
+                        </VBox>
+                        <VBox styleClass="right-forms-field-container">
+                           <children>
+                              <Label styleClass="right-form-lbl" text="PASSWORD" />
+                              <JFXPasswordField promptText="Enter your password" styleClass="right-form-field" />
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <JFXCheckBox styleClass="right-form-check" text="By login you agree" />
+                              <Hyperlink text="terms &amp; condition" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <JFXButton styleClass="right-form-btn" text="LOGIN">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                     <StackPane.margin>
+                        <Insets left="20.0" />
+                     </StackPane.margin>
+                  </VBox>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" StackPane.alignment="TOP_RIGHT">
+                     <children>
+                        <JFXButton styleClass="right-login-btn" text="Login" />
+                        <JFXButton styleClass="right-register-btn" text="Register" />
+                     </children>
+                     <StackPane.margin>
+                        <Insets right="15.0" top="15.0" />
+                     </StackPane.margin>
+                  </HBox>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
