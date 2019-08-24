@@ -1,15 +1,13 @@
 package com.houarizegai.fxtools.tables.model1;
 
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
-import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
-import org.controlsfx.glyphfont.FontAwesome;
 
 public class Employee {
     private JFXCheckBox selectCheck;
@@ -18,13 +16,15 @@ public class Employee {
     private Label statusLbl;
     private HBox actionContainer;
     private FontAwesomeIconView deleteIcon, editIcon;
+    private Hyperlink url;
 
     private TableView containerTable;
 
-    public Employee(TableView containerTable, int id, String name, boolean isSuccess) {
+    public Employee(TableView containerTable, int id, String name, boolean isSuccess, String url) {
         this.id = id;
         this.name = name;
         this.containerTable = containerTable;
+        this.url = new Hyperlink(url);
 
         selectCheck = new JFXCheckBox();
         selectCheck.getStyleClass().add("check-select");
@@ -94,5 +94,9 @@ public class Employee {
 
     public HBox getActionContainer() {
         return actionContainer;
+    }
+
+    public Hyperlink getUrl() {
+        return url;
     }
 }
