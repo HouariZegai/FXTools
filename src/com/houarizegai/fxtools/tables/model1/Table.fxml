@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane stylesheets="@table.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.fxtools.tables.model1.TableController">
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+   <children>
+      <TableView fx:id="table" prefHeight="300.0" prefWidth="700.0">
+        <columns>
+            <TableColumn fx:id="colSelect" prefWidth="53.0" text="#" />
+          <TableColumn fx:id="colId" prefWidth="95.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="235.0" text="NAME" />
+            <TableColumn fx:id="colStatus" minWidth="0.0" prefWidth="170.0" text="STATUS" />
+            <TableColumn fx:id="colActions" prefWidth="143.0" text="ACTIONS" />
+        </columns>
+      </TableView>
+   </children>
+</StackPane>

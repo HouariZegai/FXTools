@@ -1,0 +1,34 @@
+* {
+    -fx-font-family: Tahoma;
+}
+
+.check-select {
+    -jfx-checked-color: #2196f3;
+    -fx-cursor: hand
+}
+
+.icon-action {
+    -icon-size: 22px;
+    -fx-cursor: hand
+}
+
+.icon-action-trash {
+    -fx-fill: #D00;
+}
+
+.icon-action-edit {
+    -fx-fill: #2196f3;
+}
+
+.lbl {
+    -fx-text-fill: #FFF;
+    -fx-padding: 3px 5px;
+}
+
+.lbl-failed {
+    -fx-background-color: #F00;
+}
+
+.lbl-success {
+    -fx-background-color: #080;
+}
