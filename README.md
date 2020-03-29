@@ -1,13 +1,23 @@
 # FX Tools 🎉
-My JavaFX resources, libraries &amp; ready tools (GUI) using in JavaFX projects.
+Helpful Tools and UIs, you can use it in your JavaFX projects.
 
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Java 8](https://img.shields.io/badge/Java-8-red.svg)](https://www.java.com)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
 
-## Samples
+## Thank _You_!
+Please :star: this repo to help others find it easily
 
-### Custom Controls
+## Other
+* [Jasper Report](src/com/houarizegai/fxtools/reports)
+* [Tray Icon](src/com/houarizegai/fxtools/service/trayicon)
+* [Internationalization (i18n)](src/com/houarizegai/fxtools/internationalization)
+* [Preloader](src/com/houarizegai/fxtools/preloader)
+* [Dynamic Clock](src/com/houarizegai/fxtools/datetime)
+
+## UI Samples
+
+### Custom Controls (Show/Hide Password Field)
 
 | ![screenshots](screenshots/custom/controls/custom_passwordfield.gif) |
 |:-------:|
