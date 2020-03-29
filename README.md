@@ -7,11 +7,38 @@ My JavaFX resources, libraries &amp; ready tools (GUI) using in JavaFX projects.
 
 ## Samples
 
+### Custom Controls
+
+| ![screenshots](screenshots/custom/controls/custom_passwordfield.gif) |
+|:-------:|
+
 ### Dashboard
 
 | ![screenshots](screenshots/dashboards/1.gif) |
 |:-------:|
 | ![screenshots](screenshots/dashboards/2.PNG) |
+
+### Forms
+
+| ![screenshots](screenshots/forms/3.gif) |
+|:-------:|
+
+| ![screenshots](screenshots/forms/2.gif) | ![screenshots](screenshots/forms/1.PNG) |
+|:-------:|:----:|
+
+| ![screenshots](screenshots/forms/4.PNG) | ![screenshots](screenshots/forms/9.PNG) |
+|:-------:|:----:|
+
+| ![screenshots](screenshots/forms/5.PNG) | ![screenshots](screenshots/forms/6.PNG) |
+|:-------:|:----:|
+
+| ![screenshots](screenshots/forms/7.PNG) | ![screenshots](screenshots/forms/8.gif) |
+|:-------:|:----:|
+
+### Custom Table
+
+| ![screenshots](screenshots/tables/1.PNG) |
+|:-------:|
 
 ### CRUD
 
@@ -37,9 +64,11 @@ My JavaFX resources, libraries &amp; ready tools (GUI) using in JavaFX projects.
 
 ### Splash Screen
 
-| ![screenshots](screenshots/splash/1.PNG) | ![screenshots](screenshots/splash/2.PNG) |
-|:-------:|:----:|
-| ![screenshots](screenshots/splash/3.PNG) |
+| ![screenshots](screenshots/splash/2.PNG) |
+|:-------:|
+
+| ![screenshots](screenshots/splash/1.PNG) | ![screenshots](screenshots/splash/3.PNG) |
+|:-----:|:----:|
 
 ### Sliders
 
@@ -48,34 +77,6 @@ My JavaFX resources, libraries &amp; ready tools (GUI) using in JavaFX projects.
 | ![screenshots](screenshots/sliders/1.gif) |
 | Slideshow |
 | ![screenshots](screenshots/sliders/slideshow/1.gif) |
-
-### Custom Controls
-
-| ![screenshots](screenshots/custom/controls/custom_passwordfield.gif) |
-|:-------:|
-
-### Custom Table
-
-| ![screenshots](screenshots/tables/1.PNG) |
-|:-------:|
-
-### Forms
-
-| ![screenshots](screenshots/forms/3.gif) |
-|:-------:|
-
-| ![screenshots](screenshots/forms/2.gif) | ![screenshots](screenshots/forms/1.PNG) |
-|:-------:|:----:|
-
-| ![screenshots](screenshots/forms/4.PNG) | ![screenshots](screenshots/forms/9.PNG) |
-|:-------:|:----:|
-
-| ![screenshots](screenshots/forms/5.PNG) | ![screenshots](screenshots/forms/6.PNG) |
-|:-------:|:----:|
-
-| ![screenshots](screenshots/forms/7.PNG) | ![screenshots](screenshots/forms/8.gif) |
-|:-------:|:----:|
-
 
 ## Contributing 💡
 If you want to contribute to this project and make it better with new ideas, your pull request is very welcomed.
