@@ -1,4 +1,4 @@
-package com.houarizegai.fxtools.newfeatures.controls.showpassfield;
+package com.houarizegai.fxtools.custom.controls.showpassfield;
 
 import de.jensd.fx.glyphs.materialicons.MaterialIcon;
 import de.jensd.fx.glyphs.materialicons.MaterialIconView;
@@ -37,7 +37,7 @@ public class ShowPasswordDemo extends Application {
         container.getChildren().addAll(showPassField, iconVisible);
 
         Scene scene = new Scene(new StackPane(container), 500, 250);
-        primaryStage.setTitle("Demo");
+        primaryStage.setTitle("Custom Input control - Demo");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

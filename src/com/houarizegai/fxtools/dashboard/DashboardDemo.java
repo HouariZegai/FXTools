@@ -1,7 +1,6 @@
 
-package com.houarizegai.fxtools;
+package com.houarizegai.fxtools.dashboard;
 
-import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,16 +9,18 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class Launch extends Application {
+import java.io.IOException;
+
+public class DashboardDemo extends Application {
     public static Stage stage;
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/fxtools/tables/model1/Table.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("model2/Dashboard.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("JavaFx Tools");
-        Launch.stage = stage;
-        //Launch.makeStageTransparent();
+        DashboardDemo.stage = stage;
+        //makeStageTransparent();
+        stage.setTitle("FXTools - Dashboard");
         stage.show();
     }
 

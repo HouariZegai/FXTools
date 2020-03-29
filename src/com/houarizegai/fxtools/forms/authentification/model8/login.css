@@ -68,8 +68,8 @@
 /* Start SnackBar */
 
 .jfx-snackbar-content {
-    -fx-background-color: #2196f3;
-    -fx-pref-width: 380
+    -fx-background-color: #f31329;
+    -fx-pref-width: 320
 }
 .jfx-snackbar-toast {
     -fx-text-fill: #FFF;

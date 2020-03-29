@@ -27,29 +27,24 @@ public class SliderController implements Initializable {
 
     private void sliderAutoChangePictures() {
         // Make auto change the slider in duration
-
-        Timeline sliderTimer = new Timeline(new KeyFrame(Duration.ZERO, e -> {
-            onNext();
-        }),
-                new KeyFrame(Duration.seconds(4))
-        );
+        Timeline sliderTimer = new Timeline(new KeyFrame(Duration.ZERO, e -> onNext()), new KeyFrame(Duration.seconds(4)));
         sliderTimer.setCycleCount(Animation.INDEFINITE);
         sliderTimer.play();
     }
     
     @FXML
     private void onPrevious() {
-        if (--counter < 1) {
+        if (--counter < 1)
             counter = NUMBER_IMAGE_SLIDER;
-        }
+
         imgFadeTransition(counter);
     }
 
     @FXML
     private void onNext() {
-        if (++counter > NUMBER_IMAGE_SLIDER) {
+        if (++counter > NUMBER_IMAGE_SLIDER)
             counter = 1;
-        }
+
         imgFadeTransition(counter);
     }
 
@@ -62,8 +57,6 @@ public class SliderController implements Initializable {
         ft.setCycleCount(0);
         ft.setAutoReverse(true);
         ft.play();
-        System.out.println("before counter:" + imgCounter);
         imgSlider.setImage(new Image("com/houarizegai/fxtools/sliders/model2/img/" + imgCounter + ".png"));
-        System.out.println("after counter:");
     }
 }

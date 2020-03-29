@@ -13,13 +13,13 @@
          <left>
             <VBox alignment="CENTER" onMouseClicked="#onPrevious" prefWidth="70.0" styleClass="box" BorderPane.alignment="CENTER">
                <children>
-                  <EmojiOneView glyphName="ARROW_BACKWARD" size="45" styleClass="move-fontawesome" />
+                  <EmojiOneView fill="#56bbff" glyphName="ARROW_BACKWARD" size="45" styleClass="move-fontawesome" />
                </children></VBox>
          </left>
          <right>
             <VBox alignment="CENTER" onMouseClicked="#onNext" prefWidth="70.0" styleClass="box" BorderPane.alignment="CENTER">
                <children>
-                  <EmojiOneView glyphName="ARROW_FORWARD" size="45" styleClass="move-fontawesome" />
+                  <EmojiOneView fill="#56bbff" glyphName="ARROW_FORWARD" size="45" styleClass="move-fontawesome" />
                </children></VBox>
          </right>
       </BorderPane>

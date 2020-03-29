@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MyApplication extends Application {
+public class PreLoaderDemo extends Application {
 
     private static final int COUNT_LIMIT = 10;
 
@@ -44,6 +44,6 @@ public class MyApplication extends Application {
     }
 
     public static void main(String[] args) {
-        LauncherImpl.launchApplication(MyApplication.class, MyPreLoader.class, args);
+        LauncherImpl.launchApplication(PreLoaderDemo.class, MyPreLoader.class, args);
     }
 }

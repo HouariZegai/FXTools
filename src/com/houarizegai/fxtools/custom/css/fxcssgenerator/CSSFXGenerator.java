@@ -1,4 +1,4 @@
-package com.houarizegai.fxtools.newfeatures.css.fxcssgenerator;
+package com.houarizegai.fxtools.custom.css.fxcssgenerator;
 
 public class CSSFXGenerator {
     private StringBuilder styleBuilder;

@@ -56,6 +56,7 @@ public class Employee {
     private void initActions() {
         deleteIcon = new FontAwesomeIconView(FontAwesomeIcon.TRASH);
         deleteIcon.getStyleClass().addAll("icon-action", "icon-action-trash");
+        deleteIcon.setSize("20px");
         deleteIcon.setOnMouseClicked(e -> {
             System.out.println(id + " - was clicked!");
             containerTable.getItems().remove(this);
@@ -63,6 +64,7 @@ public class Employee {
 
         editIcon = new FontAwesomeIconView(FontAwesomeIcon.EDIT);
         editIcon.getStyleClass().addAll("icon-action", "icon-action-edit");
+        editIcon.setSize("20px");;
         editIcon.setOnMouseClicked(e -> {
             System.out.println(id + " - edit icon was clicked!");
         });

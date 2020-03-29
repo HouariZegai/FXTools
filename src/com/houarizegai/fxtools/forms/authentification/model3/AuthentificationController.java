@@ -1,6 +1,7 @@
 package com.houarizegai.fxtools.forms.authentification.model3;
 
 import com.houarizegai.fxtools.Launch;
+import com.houarizegai.fxtools.forms.authentification.FormsDemo;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.animation.TranslateTransition;
@@ -52,29 +53,19 @@ public class AuthentificationController implements Initializable {
     }
 
     private void makeStageDrageable() {
-        root.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                xOffset = event.getSceneX();
-                yOffset = event.getSceneY();
-            }
+        root.setOnMousePressed(event -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
         });
 
-        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                Launch.stage.setX(event.getScreenX() - xOffset);
-                Launch.stage.setY(event.getScreenY() - yOffset);
-                Launch.stage.setOpacity(0.7f);
-            }
-        });
-        root.setOnDragDone((e) -> {
-            Launch.stage.setOpacity(1.0f);
-        });
-        root.setOnMouseReleased((e) -> {
-            Launch.stage.setOpacity(1.0f);
+        root.setOnMouseDragged(event -> {
+            FormsDemo.stage.setX(event.getScreenX() - xOffset);
+            FormsDemo.stage.setY(event.getScreenY() - yOffset);
+            FormsDemo.stage.setOpacity(0.7f);
         });
 
+        root.setOnDragDone(e -> FormsDemo.stage.setOpacity(1.0f));
+        root.setOnMouseReleased(e -> FormsDemo.stage.setOpacity(1.0f));
     }
 
     /* Change Pane (between Sign in and Sign up */

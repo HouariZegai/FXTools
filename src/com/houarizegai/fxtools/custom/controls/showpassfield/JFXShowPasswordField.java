@@ -1,4 +1,4 @@
-package com.houarizegai.fxtools.newfeatures.controls.showpassfield;
+package com.houarizegai.fxtools.custom.controls.showpassfield;
 
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
